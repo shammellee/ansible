@@ -40,7 +40,7 @@ clean:
 	-rm rst/*_by_category.rst
 	-rm rst/*_module.rst
 
-.PHONEY: docs clean
+.PHONY: docs clean
 
 directives: $(FORMATTER) ../hacking/templates/rst.j2
 	PYTHONPATH=../lib $(DUMPER) --template-dir=../hacking/templates --output-dir=rst/
